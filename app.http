@@ -1,0 +1,84 @@
+//API 1
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+
+//API 2
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+###
+
+//API 3
+
+GET http://localhost:3000/user/tweets/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 4
+GET http://localhost:3000/user/following/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 5
+GET http://localhost:3000/user/followers/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 6
+GET http://localhost:3000/tweets/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 7
+GET http://localhost:3000/tweets/2/likes/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 8
+GET http://localhost:3000/tweets/2/replies/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 9
+GET http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+###
+
+//API 10
+POST http://localhost:3000/user/tweets/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
+
+{
+   "tweet": "My Administrationcis working to get America vaccinated as quickly as possible. Tune in as I provide an update on our progress and timeline moving forward."
+}
+
+###
+
+//API 11
+DELETE http://localhost:3000/tweets/13
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MzE0Mjg2OTN9.JsrRzW2eRI-hajWWDLDtjOHc1tTpWHtzuGw5g11U7IE
